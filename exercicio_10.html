@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <script>
+        let produto = prompt("Digite o nome do produto: ") ;
+        let custofabrica = prompt("Digite o preço de custo do produto: ");
+        let taxasimposto = prompt("Digite a porcentagem de imposto: ");
+        let distribuidor = prompt("Digite a taxa em porcentagem do distrubuidor: ");
+        let precofinal;
+
+        precofinal = (Number(custofabrica) + Number(((taxasimposto/100) * custofabrica)+ ((distribuidor/100) * custofabrica)))
+
+        document.writeln(`Produto: ${produto} <br> Valor para venda: ${precofinal}`);
+    </script>
+</body>
+</html>
