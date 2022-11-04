@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+</head>
+<body>
+    <p id="total"></p>
+    <script>
+        let nomecorrentista = prompt("Digite o Nome do Correntista.");
+        let banco = prompt ("Digite o Nome do Banco.");
+        let numconta = prompt ("Digite o Número da Conta.");
+        let valortotalchequesdebitar = prompt("Digite o Valor Total dos Cheques à Debitar.");
+        let totaldinheirochequescreditar = prompt("Digite o Total de Dinheiro e Cheques à Creditar.");
+        const limitecredito = 1200;
+        let saldoatual = prompt("Digite o Saldo Atual.");
+        let saldodisponivel;
+
+        saldodisponivel = (Number(saldoatual) + Number(limitecredito) + Number(totaldinheirochequescreditar)) - Number(valortotalchequesdebitar)
+
+        document.getElementById("total").innerHTML = "Cliente: " + nomecorrentista + "<br>Banco: " + banco + "<br>C/C: " + numconta + "<br>Saldo Disponível: " + saldodisponivel;
+
+    </script>
+    
+</body>
+</html>

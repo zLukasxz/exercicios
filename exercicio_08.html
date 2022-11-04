@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+</head>
+<body>
+    <h1>Pedido de Lanche</h1>
+    <h3>Menu</h3>
+    <h3>Hot Dog: R$ 1,00</h3>
+    <h3>Hambúrguer: R$ 1,30</h3>
+    <h3>Cheesebúrguer: R$ 1,50</h3>
+    <h3>Refrigerante em Lata: R$ 1,00</h3>
+    <h3>Batata Frita: R$ 0,80</h3>
+    <br><br>
+    <script>
+        const hotdog = 1;
+        const hamburguer = 1.30;
+        const cheeseburguer = 1.50;
+        const refrigerante = 1;
+        const batatafrita = 0.8;
+        let cliente = prompt("Qual é o seu nome?");
+        let qtdhotdog = prompt("Quantos Hot Dogs você deseja?");
+        let qtdhamburguer = prompt("Quantos Hambúrgueres você deseja?");
+        let qtdcheeseburguer = prompt("Quantos Cheeseburguers você deseja?");
+        let qtdrefrigerante = prompt("Quantos Refrigerantes em Lata você deseja?");
+        let qtdbatatafrita = prompt("Quantas Batatas Fritas você deseja?");
+        let resultado;
+        resultado = (hotdog * qtdhotdog) + (hamburguer * qtdhamburguer) + (cheeseburguer * qtdcheeseburguer) + (refrigerante * qtdrefrigerante) + (batatafrita * qtdbatatafrita)
+        
+        document.writeln(`Cliente: ${cliente} <br><br><br> Quantidade de Hot Dogs: ${qtdhotdog} <br> Valor Total dos Hot Dogs: R$${hotdog * qtdhotdog} <br><br> Quantidade de Hamburgueres: ${qtdhamburguer} <br> Valor Total dos Hambúrgueres: R$${hamburguer * qtdhamburguer} <br><br> Quantidade de Cheeseburguers: ${qtdcheeseburguer} <br> Valor Total dos Cheeseburguers: R$${cheeseburguer * qtdcheeseburguer} <br><br> Quantidade de Refrigerantes em Lata: ${qtdrefrigerante} <br> Valor Total dos Refrigerantes: R$${refrigerante * qtdrefrigerante} <br><br> Quantidade de Batatas Fritas: ${qtdbatatafrita} <br> Valor Total das Batatas Fritas: R$${batatafrita * qtdbatatafrita} <br><br> Total a pagar: R$${resultado}`);
+    </script>
+</body>
+</html>

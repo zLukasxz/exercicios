@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    <p id="impressao"></p>
+    <script>
+        let nomealuno = prompt("Digite o Nome do Aluno.")
+        let numturma = prompt("Digite o Número da Turma do Aluno.")
+        let disciplina = prompt("Digite o Nome da Disciplina.")
+        let notaum = prompt("Digite a Primeira Nota do Aluno.")
+        let notadois = prompt("Digite a Segunda Nota do Aluno.")
+        let notatres = prompt("Digite a Terceira Nota do Aluno.")
+        let mediaaluno;
+
+        mediaaluno = (Number(notaum) + Number(notadois) + Number(notatres)) / 3
+
+        document.getElementById("impressao").innerHTML = "<h1>" + nomealuno + "</h1>" + "<br>Turma: " + numturma + "<br>Disciplina: " + disciplina + "<br><br><h3>Média Final: " + mediaaluno + "</h3>";
+    </script>
+</body>
+</html>

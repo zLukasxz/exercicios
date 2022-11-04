@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <p id="impressao"></p>
+    <script>
+        let nome = prompt("Digite o Nome Completo do Professor.")
+        let endereco = prompt("Digite o Endereço do Professor.")
+        let cidade = prompt("Digite a Cidade do Professor.")
+        let estado = prompt("Digite a Unidade Federativa (Estado).")
+        let cep = prompt("Digite o CEP.")
+        let telefone = prompt("Digite o Número de Telefone do Professor.")
+        let cpf = prompt("Digite o CPF do Professor.")
+        let rg = prompt("Digite o Registro Geral (RG) do Professor.")
+        let datanasc = prompt("Digite a Data de Nascimento.")
+        let grauesc = prompt("Digite o Grau de Escolaridade do Professor (Mestre, Doutor, ...).")
+        let cursolec = prompt("Digite o Curso que Leciona.")
+
+        document.getElementById("impressao").innerHTML = "<h1>" + nome + "</h1>" + "<br>Endereço: " + endereco + "<br>Cidade: " + cidade + "<br>Estado: " + estado + "<br>CEP: " + cep + "<br>Telefone: " + telefone + "<br>CPF: " + cpf + "<br>RG: " + rg + "<br>Data de Nascimento: " + datanasc + "<br>Grau de Escolaridade: " + grauesc + "<br>Curso que Leciona: " + cursolec;
+    </script>
+</body>
+</html>
